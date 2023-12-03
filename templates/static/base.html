@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% block title %}
+
+    {% endblock %}
+    
+    <meta name ="description" content="Une Application pour filtrer les rapports auto de Pronto">
+
+    <!-- Inclure le Bootstrap 4 ici --> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+    <!--Inclure le Bootstrap 5 ici-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel ="stylesheet" href="">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <script src="https://kit.fontawesome.com/14273d579a.js" crossorigin="anonymous"></script>
+    <!--Inclure le  Bootstrap 5 ici-->
+
+    <!--Inclure le Jquery ici-->    
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous">
+    </script> 
+    <!--Inclure le Jquery ici-->  
+
+    <!--Inclure le Jquery UI ici-->  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+    <!--Inclure le Jquery UI ici-->
+
+</head>
+<body>
+
+     <!-- Header de Page -->
+
+        {% include 'static/header.html' %}
+
+     <!-- Header de Page -->
+        
+        <main> 
+
+            <!-- Contenu de la Page -->
+
+                {% block content %}
+
+                {% endblock %}
+
+            <!-- Contenu de la Page -->
+
+
+             <!--Fenêtre Modale-->
+
+
+             <!--Fenêtre Modale-->
+                
+        </main>
+
+        <!--Inclure le Bootstrap 4 ici-->
+
+            <!-- jQuery library -->
+            <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+            <!-- Popper JS -->
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+            <!-- Latest compiled JavaScript -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+            <!--Inclure le Bootstrap 4 ici-->
+
+            <!--Inclure le Bootstrap 5 ici-->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+            <!--Inclure le Bootstrap 5 ici-->
+        
+</body>
+</html>        

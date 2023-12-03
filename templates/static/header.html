@@ -1,0 +1,46 @@
+<header class="py-4">      
+    <nav nav class="navbar navbar-expand-md fixed-top navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand text-uppercase fw-bold" href="#">
+                <span class="bg-danger bg-gradient p-1 rounded-3 text-light">SALLE DE COMMANDEMENT G4S CI </span> 
+            </a>
+            
+            <ul class="navbar-nav">
+
+                {% if etat == 'accueil' %} 
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{% url 'rapport:accueil' %}" title="Accueil"><mark>Accueil</mark> </a>
+                    </li>
+                {% else %}                        
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'rapport:accueil' %}" title="Accueil">Accueil</a>
+                    </li>
+                {% endif %}
+
+                {% if etat == 'rapport' %} 
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{% url 'rapport:rapport' %}" title="Cliquez ici pour les rapports"><mark>Rapport</mark></a>
+                    </li>
+                {% else %}                        
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'rapport:rapport' %}" title="Cliquez ici pour les rapports">Rapport</a>
+                    </li>
+                {% endif %}
+               
+                {% if etat == 'contact' %} 
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{% url 'rapport:contact' %}" title="Nous contacter"><mark>Contact</mark></a>
+                    </li>
+                {% else %}                        
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'rapport:contact' %}" title="Nous contacter">Contact</a>
+                    </li>
+                {% endif %}
+               
+            </ul>
+        </div>
+    </nav>
+</header>
+
+
+
