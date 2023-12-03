@@ -1,0 +1,72 @@
+{% extends 'static/base.html' %}
+   
+    {% block title %}
+
+        <title>Rapport</title>
+
+    {% endblock %}
+
+
+    {% block content %}
+
+            <section  class="my-5" id="connection">
+                <div class="container">
+                    <div class="row gy-4 align-items-center">
+                        <div class="col-12 col-md-12">
+                            <h1 class="fw-bold text-md-center" id ="defile"><center>Rapport Alarme</center></h1>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="information" class="py-5 bg-light">
+                <div class="container">
+                    <div class="row">
+                        <p class="lead mb-4 text-md-center" > 
+                            Pour obtenir l'un des rapports, veuillez cliquer sur le bouton <mark>choisir un fichier</mark> <br> 
+                            pour l'importation puis sur l'un des boutons <mark>Alarme / Panic</mark> ou <mark>Open / Close</mark> pour le rapport     
+                        </p>  
+                    </div>   
+                    
+                    <form method="POST" enctype="multipart/form-data">
+                        <div class="row">
+                            <div class="col">
+                                <div class="input-group mb-4">
+                                    
+                                </div>   
+                            </div>
+
+                            <div class="col">
+                                <div class="input-group mb-4">      
+                                        {% csrf_token %}
+                                        <input type="file" class="form-control" id="customFile" required name="files"> 
+                                </div>   
+                            </div>
+                            
+                            <div class="col">
+                                <div class="input-group mb-4">
+                                    <div class="btn-group">
+                                        <button type="submit" class="btn btn-primary" name="alarme">ALARME / PANIC</button>
+                                        <button type="submit" class="btn btn-danger" name="open">OPEN / CLOSE</button>
+                                    </div>
+                                </div>   
+                            </div>
+
+                            <div class="col">
+                                <div class="input-group-append">
+                                    
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </form>
+
+                    {% if message %} 
+                        <div class="alert alert-danger text-center"><strong>{{message}}</strong></div>         
+                    {% endif %}
+
+                </div>    
+
+            </section> 
+
+    {% endblock %}

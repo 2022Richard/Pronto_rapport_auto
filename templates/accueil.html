@@ -1,0 +1,33 @@
+{% extends 'static/base.html' %}
+   
+    {% block title %}
+
+        <title>Accueil</title>
+
+    {% endblock %}
+
+
+    {% block content %}
+
+            <section  class="my-5" id="connection">
+                <div class="container">
+                    <div class="row gy-4 align-items-center">
+                        <div class="col-12 col-md-12">
+                            <h1 class="fw-bold text-md-center" id ="defile"><center>Automatisation des rapports alarmes</center></h1>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="information" class="py-5 bg-light">
+                <p class="lead mb-4 text-md-center" > 
+                    Cet outil a pour objectif de limiter la saisie manuelle du rapport des déclenchements <br> alarmes des Opérateurs Pronto.
+                    <br> <br> En effet, suite à l'extraction du rapport des alarmes issu du système ORYX, <br> cet outil filtrera les données afin de vous 
+                    présenter uniquement celui  <br> des déclenchements (Panic et Alarme) ou (Open et Close) selon votre besoin. <br>
+                    <br> Pour obtenir l'un de ces types de rapports, veuillez cliquer sur le champ rapport.<br>
+                    <br> Pour vos remarques, critiques et suggestions, veuillez cliquer sur le champ contact.<br>
+                </p>
+            </section>
+
+    {% endblock %}
+    
